@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:skynseagallery_app/login.dart';
+import 'package:skynseagallery_app/register.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,9 +12,10 @@ class SkyandSeagallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-       initialRoute: Login.id,
+       initialRoute: Register.id,
         routes: {
          Login.id: (context) => Login(),
+          Register.id: (context) => Register(),
         },
     );
   }
